@@ -140,7 +140,7 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 EMAIL_BACKEND = "django.core.mail.backends.console.EmailBackend"
 
-#AUTHENTICATION_BACKENDS=['accounts.backend.Login_Email_Username']
+AUTHENTICATION_BACKENDS=['accounts.backend.Login_Email_Username']
 
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'smtp.gmail.com'
@@ -150,3 +150,6 @@ EMAIL_HOST_USER = 'mohamedelazab2017@gmail.com'
 EMAIL_HOST_PASSWORD = 'lojenzbwkbaaihnz'
 
 EMAIL_USE_SSL = False
+
+
+LOGIN_REDIRECT_URL = '/'
